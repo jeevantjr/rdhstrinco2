@@ -6,81 +6,105 @@
   <title>RDHS Trincomalee | Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
       font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
+      background-color: #f2f2f2;
       color: #333;
     }
     header {
-      background-color: #006699;
+      background: linear-gradient(to right, #005b8e, #0083b0);
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
+      margin-bottom: 10px;
     }
     header p {
       font-size: 1.2em;
     }
     nav {
-      background-color: #004466;
-      padding: 10px;
+      background-color: #004b73;
+      padding: 15px 0;
       text-align: center;
     }
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
+      margin: 0 20px;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
     }
     .hero {
       background-image: url('https://www.health.gov.lk/images/banner.jpg');
       background-size: cover;
       background-position: center;
-      height: 300px;
+      height: 350px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 2em;
-      font-weight: bold;
-      text-shadow: 1px 1px 4px #000;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 6px #000;
     }
     .section {
-      padding: 40px 20px;
-      max-width: 1000px;
+      padding: 60px 20px;
+      max-width: 1200px;
       margin: auto;
     }
     .section h2 {
-      color: #006699;
+      color: #005b8e;
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      text-align: center;
     }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
+      gap: 30px;
+      margin-top: 40px;
     }
     .card {
-      background: white;
+      background-color: white;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 25px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #0083b0;
+      margin-bottom: 10px;
     }
     footer {
-      background-color: #004466;
+      background-color: #00334d;
       color: white;
+      padding: 30px 20px;
       text-align: center;
-      padding: 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Regional Directorate of Health Services</h1>
-    <p>Trincomalee District, Sri Lanka</p>
+    <p>Trincomalee District, Ministry of Health - Sri Lanka</p>
   </header>
 
   <nav>
@@ -91,47 +115,48 @@
   </nav>
 
   <div class="hero">
-    Towards a Healthier Trincomalee
+    Serving the Health of Trincomalee with Dedication
   </div>
 
   <section class="section" id="vision">
     <h2>Our Vision</h2>
-    <p>To be the leading organization in Trincomalee District dedicated to creating a healthier community that contributes to a healthier nation.</p>
+    <p>To be the leading regional public health authority in delivering comprehensive, equitable, and sustainable healthcare services to the people of Trincomalee.</p>
   </section>
 
   <section class="section" id="mission">
     <h2>Our Mission</h2>
-    <p>To ensure a healthier community by providing equitable access to sustainable, quality healthcare services while promoting self-reliance, personal responsibility, and healthy lifestyles within the Trincomalee District.</p>
+    <p>To ensure a healthier future for all communities in Trincomalee District through innovation, collaboration, and evidence-based public health strategies, while respecting diversity and equity in service delivery.</p>
   </section>
 
   <section class="section" id="services">
-    <h2>Key Services</h2>
+    <h2>Our Core Services</h2>
     <div class="grid">
       <div class="card">
-        <h3>Curative Care</h3>
-        <p>Planning and monitoring hospital services and emergency units throughout the district.</p>
+        <h3>Primary & Curative Care</h3>
+        <p>Coordinating hospital services, emergency care, and outpatient departments.</p>
       </div>
       <div class="card">
-        <h3>Preventive Care</h3>
-        <p>Public health promotion, disease prevention, and community engagement programs.</p>
+        <h3>Public Health Services</h3>
+        <p>Community outreach, vaccinations, and disease surveillance programs.</p>
       </div>
       <div class="card">
         <h3>Maternal & Child Health</h3>
-        <p>Comprehensive services from antenatal care to early childhood development.</p>
+        <p>Supporting women and children's health through comprehensive initiatives.</p>
       </div>
       <div class="card">
-        <h3>School Health</h3>
-        <p>Health checks, dental services, and health education for school children.</p>
+        <h3>School & Adolescent Health</h3>
+        <p>Medical checkups, health education, and psychological support in schools.</p>
       </div>
       <div class="card">
-        <h3>Well-Women Services</h3>
-        <p>Medical screenings and health awareness for women aged 35+.</p>
+        <h3>Health Education & Awareness</h3>
+        <p>Workshops, awareness campaigns, and digital outreach programs for public engagement.</p>
       </div>
     </div>
   </section>
 
   <footer id="contact">
-    <p>&copy; 2025 RDHS Trincomalee | Ministry of Health, Sri Lanka</p>
+    <p>&copy; 2025 Regional Director of Health Services - Trincomalee | All Rights Reserved</p>
+    <p>Developed with inspiration from RDHS Gampaha | Ministry of Health, Sri Lanka</p>
   </footer>
 </body>
 </html>
